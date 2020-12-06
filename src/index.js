@@ -160,19 +160,24 @@ const showPairWithTopics = (pairsWithTopics) => {
     <div><span id="time"></span></div><button id="start-timer">Start Timer</button></br></br>
     <form id="winner-form">
       <label for="winner-name">Who won?</label>
-      <input
-        type="radio"
-        id="radio-winner"
-        name="radio-winner"
-        value="${pair[0].name}"
-        />${pair[0].name}</input>
-      <input
-        type="radio"
-        id="radio-winner"
-        name="radio-winner"
-        value="${pair[1].name}"
-        />${pair[1].name}
-      </input>
+        <label>
+          <input
+            type="radio"
+            id="radio-winner"
+            name="radio-winner"
+            value="${pair[0].name}"
+            />
+            ${pair[0].name}
+        </label>
+        <label>
+          <input
+            type="radio"
+            id="radio-winner"
+            name="radio-winner"
+            value="${pair[1].name}"
+            />
+            ${pair[1].name}
+         </label>
       <button type="submit">Submit winner</button>
     </form>
   `;
@@ -205,7 +210,7 @@ const setTimer = (timeInSeconds) => {
   function countdown() {
     if (timeLeft === -1) {
       clearTimeout(timerId);
-      alert("Times up!");
+      alert("Time's up!");
       elem.innerHTML = "";
     } else {
       elem.innerHTML = timeLeft + " seconds remaining";

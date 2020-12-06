@@ -15,6 +15,10 @@ button:hover {
   cursor: pointer;
 }
 
+label:hover {
+  cursor: pointer;
+}
+
 #time {
   font-size: 3rem;
   color: red;
