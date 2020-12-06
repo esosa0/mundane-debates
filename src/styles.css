@@ -1,0 +1,25 @@
+body,
+input,
+button {
+  font-family: sans-serif;
+  font-size: 2rem;
+  padding: 2rem;
+}
+
+button,
+input {
+  padding: 1rem;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#time {
+  font-size: 3rem;
+  color: red;
+}
+
+#validation-error {
+  color: red;
+}
